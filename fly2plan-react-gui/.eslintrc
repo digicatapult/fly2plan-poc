@@ -8,7 +8,8 @@
     "plugin:react/recommended",
     "react-app",
     "react-app/jest",
-    "standard"
+    "standard",
+    "prettier"
   ],
   "parserOptions": {
     "ecmaFeatures": {
@@ -21,25 +22,11 @@
     "ecmaVersion": 12,
     "sourceType": "module"
   },
-  "plugins": [
-    "promise",
-    "react"
-  ],
+  "plugins": ["promise", "react", "prettier"],
   "rules": {
-    "array-bracket-spacing": [
-      "error",
-      "always"
-    ],
     "arrow-spacing": "off",
     "camelcase": "off",
     "eol-last": "off",
-    "indent": [
-      1,
-      "tab",
-      {
-        "SwitchCase": 1
-      }
-    ],
     "key-spacing": [
       "off",
       {
@@ -70,11 +57,19 @@
     ],
     "object-curly-spacing": "off",
     "prefer-regex-literals": "off",
+    "prettier/prettier": "error",
     "promise/param-names": "off",
-    "quotes": [
-      "error",
-      "single"
-    ],
+    "quotes": ["error", "single"],
+    "react/jsx-filename-extension": 0,
+    "react/require-default-props": 0,
+    "react/sort-comp": 0,
+    "react/destructuring-assignment": 0,
+    "react/no-access-state-in-setstate": 0,
+    "react/no-danger": 0,
+    "react/no-array-index-key": "warn",
+    "no-useless-constructor": "error",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
     "react/prop-types": "off",
     "react/react-in-jsx-scope": "off",
     "space-before-function-paren": "off",
