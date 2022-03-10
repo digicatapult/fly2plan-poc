@@ -68,7 +68,7 @@ export default function ColumnRightWrap({ origin }) {
                 View all present-proof records ( &nbsp;
                 <b>
                   Config – Automatically reply to proof request
-                  <a href="/#" onClick={(_) => {}} className="text-primary">
+                  <a href="/#" onClick={() => {}} className="text-primary">
                     &nbsp; ON &nbsp;
                   </a>
                 </b>

@@ -44,7 +44,7 @@ export default function CredentialSetItem({
           Timestamp:&nbsp;
           <a
             href="#/"
-            onClick={(_) => {}}
+            onClick={() => {}}
             title={timestamp}
             className="text-primary"
           >
@@ -56,7 +56,7 @@ export default function CredentialSetItem({
           &nbsp;|&nbsp; DefId:&nbsp;
           <a
             href="#/"
-            onClick={(_) => {}}
+            onClick={() => {}}
             title={cred_def_id}
             className="text-primary"
           >

@@ -78,7 +78,7 @@ export default function TableEvent({ i, j, k, eId, cId, event }) {
               <b>ConnId: </b>
               <a
                 href="/#"
-                onClick={(_) => {}}
+                onClick={() => {}}
                 title={cId}
                 className="text-primary"
               >
@@ -96,7 +96,7 @@ export default function TableEvent({ i, j, k, eId, cId, event }) {
               <a
                 href="/#"
                 className="text-primary"
-                onClick={(_) => {}}
+                onClick={() => {}}
                 title={getDefIdFull(event.by_format)}
               >
                 {getDefId(event.by_format)}
@@ -107,7 +107,7 @@ export default function TableEvent({ i, j, k, eId, cId, event }) {
               <a
                 href="/#"
                 className="text-primary"
-                onClick={(_) => {}}
+                onClick={() => {}}
                 title={eId}
               >
                 {getShortenId(eId)}

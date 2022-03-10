@@ -29,7 +29,7 @@ export default async function post(
     const res = await fetch(url, { body, method, headers })
     if (res.ok) {
       const data = await res.json()
-      await new Promise((res, rej) => setTimeout(res, 1000))
+      await new Promise((res) => setTimeout(res, 1000))
       setStoreData(transformData(data))
       setStatus('fetched')
     } else if (!res.ok) {

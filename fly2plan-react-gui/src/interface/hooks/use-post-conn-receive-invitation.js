@@ -2,6 +2,7 @@
  * This function is used to POST send send the conn receive invitation
  */
 import { useCallback, useState } from 'react'
+import { Buffer } from 'buffer'
 import post from '../api/helpers/post'
 
 export default function usePostConnReceiveInvitation() {

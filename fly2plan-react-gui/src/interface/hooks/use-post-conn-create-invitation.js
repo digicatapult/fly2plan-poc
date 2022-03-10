@@ -2,6 +2,7 @@
  * This function creates a connection invitation.
  */
 import { useCallback, useState } from 'react'
+import { Buffer } from 'buffer'
 import post from '../api/helpers/post'
 
 export default function usePostConnCreateInvitation() {

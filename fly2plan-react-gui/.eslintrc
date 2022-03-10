@@ -1,65 +1,32 @@
 {
-  "env": {
-    "browser": true,
-    "es6": true
-  },
   "extends": [
-    "plugin:promise/recommended",
+    "eslint:recommended",
     "plugin:react/recommended",
-    "react-app",
-    "react-app/jest",
-    "standard",
     "prettier"
   ],
+  "plugins": ["react", "prettier", "react-hooks"],
+  "parser": "@babel/eslint-parser",
   "parserOptions": {
-    "ecmaFeatures": {
-      "arrowFunctions": true,
-      "binaryLiterals": true,
-      "blockBindings": true,
-      "classes": true,
-      "jsx": true
-    },
-    "ecmaVersion": 12,
-    "sourceType": "module"
+    "requireConfigFile": false,
+    "sourceType": "module",
+    "babelOptions": {
+      "presets": ["@babel/preset-react"]
+    }
   },
-  "plugins": ["promise", "react", "prettier"],
+  "env": {
+    "es6": true,
+    "browser": true
+  },
+  "globals": {
+    "process": true
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
   "rules": {
-    "arrow-spacing": "off",
-    "camelcase": "off",
-    "eol-last": "off",
-    "key-spacing": [
-      "off",
-      {
-        "align": "value"
-      }
-    ],
-    "keyword-spacing": [
-      "off",
-      {
-        "before": false,
-        "after": false
-      }
-    ],
-    "no-tabs": [
-      "error",
-      {
-        "allowIndentationTabs": true
-      }
-    ],
-    "no-multi-spaces": [
-      "off",
-      {
-        "exceptions": {
-          "VariableDeclarator": true,
-          "BinaryExpression": true
-        }
-      }
-    ],
-    "object-curly-spacing": "off",
-    "prefer-regex-literals": "off",
     "prettier/prettier": "error",
-    "promise/param-names": "off",
-    "quotes": ["error", "single"],
     "react/jsx-filename-extension": 0,
     "react/require-default-props": 0,
     "react/sort-comp": 0,
@@ -72,8 +39,6 @@
     "react-hooks/exhaustive-deps": "warn",
     "react/prop-types": "off",
     "react/react-in-jsx-scope": "off",
-    "space-before-function-paren": "off",
-    "space-infix-ops": "off",
-    "space-in-parens": "off"
+    "no-unused-vars": ["error", { "ignoreRestSiblings": true }]
   }
 }
