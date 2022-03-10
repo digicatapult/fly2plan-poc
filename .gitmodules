@@ -3,4 +3,4 @@
 	url = https://github.com/bcgov/von-network.git
 [submodule "fly2plan-aries-cloudagent"]
 	path = fly2plan-aries-cloudagent
-	url = https://github.com/digicatapult/aries-cloudagent-python
+	url = https://github.com/hyperledger/aries-cloudagent-python.git
