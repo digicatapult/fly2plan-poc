@@ -1,5 +1,9 @@
 # Fly2Plan Three Agent SSI Demo
 
+## Deprecation Notice
+This application was deprecated on March 14th 2024, there will be no further dependency or security updates.
+---
+
 This is the first version of the three-agent-based proof of concept SSI system for Fly2Plan.
 
 ---
